@@ -15,7 +15,7 @@ services:
   backend:
     build:
       context: ./backend
-    image: <DOCKERHUB_USER>/crud-dd-backend:latest
+    image: saiganesh021/crud-dd-backend:latest
     restart: unless-stopped
     depends_on:
       - mongodb
@@ -28,7 +28,7 @@ services:
   frontend:
     build:
       context: ./frontend
-    image: <DOCKERHUB_USER>/crud-dd-frontend:latest
+    image: saiganesh021/crud-dd-frontend:latest
     restart: unless-stopped
     depends_on:
       - backend
@@ -52,3 +52,7 @@ volumes:
 
 networks:
   appnet:
+
+
+
+
